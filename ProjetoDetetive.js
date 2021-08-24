@@ -1,12 +1,12 @@
 const prompt = require('prompt-sync')();
-
+//necessario para rodar o prompt
 /* Projeto Detetive
 Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
 1 - 'Telefonou para uma vítima?'
 2 - 'Esteve no local faz crime?'
 3 - 'Mora perto da vítima?'
 4 - 'Devia para uma vítima?'
-5 - 'Já tranalhou com a vítima?'
+5 - 'Já trabalhou com a vítima?'
 O programa deve no final emitir uma classificação sobre a participação da pessoa no crime.
 1 resposta SIM - INOCENTE
 2 respostas SIM - SUSPEITO
@@ -33,10 +33,10 @@ console . log ( '' ) ;
 let  res3  =  + prompt ( 'Você mora perto da vítima? ' ) ;
 
 console . log ( '' ) ;
-let  res4  =  + prompt ( 'Você desviou para a vítima? ' )
+let  res4  =  + prompt ( 'Você devia para a vítima? ' )
 
 console . log ( '' ) ;
-let  res5  =  + prompt ( 'Você já está com uma vítima? ' ) ;
+let  res5  =  + prompt ( 'Você já trabalhou com uma vítima? ' ) ;
 
 let  t  =  res1  +  res2  +  res3  +  res4  +  res5 ;
 console . log ( t ) ;

@@ -22,14 +22,31 @@ filmesTerror.push("IT"); //adiciona item ao final da lista
 console.log(filmesTerror);
 console.log(filmesTerror.length);
 
-filmesTerror.pop(); //remove o ultimo item da lista
+console.log(filmesTerror[0]); //mostra o item da lista que esta na posicao []
+
+console.log('item excluido');
+let exc = filmesTerror.pop(); //remove o ultimo item da lista e coloca numa variavel
+console.log(exc);
+let del = [];
+del.push(filmesTerror.pop()); //adiciona um item a lista excluido de outra lista. 
+del.push(filmesTerror.pop());
+console.log(del);
+console.log('array del');
 
 console.log(filmesTerror);
 console.log(filmesTerror.length);
 
-filmesTerror.unshift('Brinquedo assassino');
+console.log(filmesTerror[0]);
+
+filmesTerror.unshift('Brinquedo assassino'); //adiciona item no inicio da lista
 
 console.log(filmesTerror);
 console.log(filmesTerror.length);
+
+console.log(filmesTerror[0]);
+
+filmesTerror.shift();
+console.log(filmesTerror);
+console.log(filmesTerror[0]);
 
 
