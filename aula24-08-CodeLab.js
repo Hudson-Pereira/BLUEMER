@@ -39,4 +39,8 @@ lista.splice(5,1,'novo2','novo3');//na posicao 5, remover 1, adicionar novo2,nov
 console.log('lista pos splice 5,1,novo2,novo3');
 console.log(lista);
 
-
+//lista.fill('Hudson'); troca todos os itens por hudson
+//lista.fill('Hudson',1);troca todos os itens a partir da posicao passada(1)
+lista.fill('Hudson',1,2);//troca do item passado(1) ate o segundo(2)
+console.log(lista);
+console.log('pos fill');
