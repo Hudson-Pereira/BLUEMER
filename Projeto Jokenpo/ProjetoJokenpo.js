@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')();
 
 var name = prompt('Qual seu nome?');
-window.alert(`Olá ${name}, vamos jogar JoKenPo?`);
+console.log(`Olá ${name}, vamos jogar JoKenPo?`);
 
 let humano = prompt('Escolha pedra, tesoura ou papel.');
     if(humano == 'pedra'){
