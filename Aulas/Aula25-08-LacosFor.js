@@ -14,3 +14,5 @@ for (let caracteristica in carro) { //for in
     console.log(`${caracteristica}:${carro[caracteristica]}`);
 };
 console.log('fim laco for in');
+
+
