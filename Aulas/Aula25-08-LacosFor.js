@@ -33,7 +33,7 @@ console.log('Inicio lado for each');
 
     function tabuadaDo2(item){
         console.log(item*2);
-    };
+    }; //forEach em funcao
 
     numeros.forEach(tabuadaDo2);
 
