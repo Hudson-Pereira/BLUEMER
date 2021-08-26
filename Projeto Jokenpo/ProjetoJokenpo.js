@@ -97,7 +97,11 @@ for (i=0;i<count;i++){
             console.log(`Computador - ${totalPc};`);
 
         } else {
-            console.log('Jogue direito.')
+            console.log('Jogue direito. Perdeu um ponto.')
+            totalPc ++;
+            console.log(`Humano - ${totalH};`);
+            console.log(`Computador - ${totalPc};`);
+
         };
         console.log(totalH);
         console.log(totalPc);
