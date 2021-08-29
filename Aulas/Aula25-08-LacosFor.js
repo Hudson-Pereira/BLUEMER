@@ -27,7 +27,7 @@ for (let i of num){
 };
 console.log('fim laco for of');
 
-console.log('Inicio lado for each');
+console.log('Inicio laco for each');
 
     let numeros = [0,1,2,3,4,5,6,7,8,9,10];
 
