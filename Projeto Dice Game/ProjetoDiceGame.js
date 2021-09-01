@@ -58,6 +58,12 @@ let rod = +prompt('Quantas rodadas vao ser jogadas? ');
                     };
 
                     console.log('CLASSIFICAÇÃO');
+                    let listaTotalOrdem = [listaTotal.sort(function(a,b){
+                        return a.dado - b.dado;
+                    })];
+                    for (let i of listaTotalOrdem){
+                    console.log(i); // fazer soma dos numeros para classificacao. ADSTON
+                    };
                     
                 };
             };
