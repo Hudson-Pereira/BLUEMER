@@ -68,7 +68,7 @@ let rod = +prompt('Quantas rodadas vao ser jogadas? ');
                         };
 */
                 };
-                
+                console.log(listaTotal);
                 console.log('CLASSIFICAÇÃO POR RODADA');
                     let rod = 1;
                 for (i of listaTotal){
