@@ -10,7 +10,7 @@ O programa tem que:
 • Criar um objeto pra cada jogador com nome e número tirado; (1,5 pontos) ok
 • Guarda todos os objetos em uma lista; (2,0 pontos) ok
 • Ordenar esses objetos, sabendo que o vencedor tirou o maior número
-no dado. (2,0 pontos) 
+no dado. (2,0 pontos) ok
 • Mostrar no final qual jogador ganhou mais rodadas e foi o grande
 campeão. (2,0 pontos) 
 
@@ -36,36 +36,46 @@ let rod = +prompt('Quantas rodadas vao ser jogadas? ');
                         let listaObjetos = [];   
                         for (let i=1;i<=info;i++){ 
                             
-                            let nome ={name: `Jogador${i}`}; //criando o objeto jogador por numero de jogadores
+                            let nome = {name: `Jogador${i}`}; //criando o objeto jogador por numero de jogadores
                             nome.dado = Math.floor(Math.random() * 6 + 1); //gerando numero no dado e colocando no objeto
                             //console.log(nome);
                             console.log(`${nome.name}: ${nome.dado} pontos.`); //mostra o objeto com nome e numero
                             listaObjetos.push(nome); //joga na lista o objeto gerado
                             
                             };
-                            
+                        
                         console.log();
                         listaTotal.push(listaObjetos);
-                        //console.log(listaObjetos);
-                        
-                    };
-                    
-                    console.log('PONTUAÇÃO');
-                    let cont = listaTotal.length;
-                    for(let i =0;i<cont;i++){
-                        console.log(`Rodada ${i+1}`);
-                        console.log(listaTotal[i]);
-                    };
+                        //console.log(listaTotal);
+                
+                        listaObjetos.sort(function(a,b) {
+                            if (a.dado > b.dado){
+                                return -1 
+                            }; 
+                            if(a.dado < b.dado) {
+                                return 1
+                            };
+                            return 0;
+                        });
+/*
+                        for (let i=0;i<listaObjetos.length;i++){
+                            console.log(`TABELA DE PONTOS`);
+                                                    
+                             for(i of listaTotal){
 
-                    console.log('CLASSIFICAÇÃO');
-                    let listaTotalOrdem = [listaTotal.sort(function(a,b){
-                        return a.dado - b.dado;
-                    })];
-                    for (let i of listaTotalOrdem){
-                    console.log(i); // fazer soma dos numeros para classificacao. ADSTON
-                    };
-                    
+                                console.log(i);
+                                                       };
+                        };
+*/
                 };
+                
+                console.log('CLASSIFICAÇÃO POR RODADA');
+                    let rod = 1;
+                for (i of listaTotal){
+                    console.log(`Rodada ${rod}.`)
+                    console.log(i);
+                    rod++;
+                };
+
             };
-        
-        
+    };
