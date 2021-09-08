@@ -90,20 +90,7 @@ function exibirResultados(){
     total.push(cand2);
     total.push(cand3);
     
-    let ord = total.sort(function(a,b) {
-        if (a.dado > b.dado){
-            return 1 
-        }; 
-        if(a.dado < b.dado) {
-            return -1
-        };
-        return 0;
-    });
     
-    
-    };
-};
-
 
 // INICIO PROGRAMA
 console.log();
