@@ -64,16 +64,23 @@ function autorizaVoto(){
     };
 };
 
-let candi1 = {nome: 'Candidato 1', cand: 0};
-let candi2 = {nome: 'Candidato 2', cand: 0};
-let candi3 = {nome: 'Candidato 3', cand: 0};
-let nulo = {nome: 'Nulo', cand: 0};
-let brc = {nome: 'Em Branco', cand: 0};
+const candi1 = {nome: 'Candidato 1', cand: 0};
+const candi2 = {nome: 'Candidato 2', cand: 0};
+const candi3 = {nome: 'Candidato 3', cand: 0};
+const nulo = {nome: 'Nulo', cand: 0};
+const brc = {nome: 'Em Branco', cand: 0};
 
 let totalVotos = 0;
 function votacao(){
     let option = 0;
 
+    console.log();
+   
+    console.log('CADIDATO 1 - Opção 1.');
+    console.log('CADIDATO 2 - Opção 2.');
+    console.log('CADIDATO 3 - Opção 3.');
+    console.log('NULO - Opção 4.');
+    console.log('EM BRANCO - Opção 5.');
     console.log();
     option = parseInt(prompt('Digite o número do seu candidato: '));
         if (option == 1){
@@ -131,15 +138,9 @@ function exibirResultados(){
     console.log(total);
 };
 // INICIO PROGRAMA
-console.log();
+
 console.log('VOTAÇÃO');
 console.log();
-console.log('CADIDATO 1 - Opção 1.');
-console.log('CADIDATO 2 - Opção 2.');
-console.log('CADIDATO 3 - Opção 3.');
-console.log('NULO - Opção 4.');
-console.log('EM BRANCO - Opção 5.');
-
 console.log('=================================================================================');
 console.log();
 console.log('Atenção, responda apenas com S para sim ou N para não.');
