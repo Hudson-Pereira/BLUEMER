@@ -12,14 +12,20 @@ ok - Contabilizar os votos de acordo com os significados (3,0 pontos):
 4 = Voto Nulo`
 5 = Voto em Branco
 Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
- - O total de votos para cada candidato 
- - O total de votos nulos
- - O total de votos em branco
- - Qual candidato venceu a votação
+ok - O total de votos para cada candidato 
+ok - O total de votos nulos
+ok - O total de votos em branco
+ok - Qual candidato venceu a votação
  */
 function dados(){
+    console.log();
     nasc = +prompt('Digite o ano de nascimento com 4 dígitos(xxxx): ');
+        while (nasc > 2021){
+            console.log('Digite um ano válido.')
+            dados();
+        };
     validaVoto();
+    console.log();
     cont = prompt('Tem mais pessoas para votar? ')    
         
 };
@@ -28,8 +34,10 @@ let nasc = 0;
 function validaVoto(){
     let voto = 2021 - nasc;
     if (voto < 16){
+        console.log();
         console.log(`Você tem ${voto} anos. Voto Negado. Ainda não possui idade mínima de 16 anos.`);
     } else if (voto >= 16 && voto < 18){
+        console.log();
         console.log(`Você tem ${voto} anos. Seu voto é opcional, você decide se quer votar ou não.`);
         let menor = prompt('Quer votar?');
             if (menor == 's' || menor == 'S') {
@@ -37,10 +45,12 @@ function validaVoto(){
             }; 
         nasc = voto;
     } else if (voto >= 18 && voto < 65){
+        console.log();
         console.log(`Você tem ${voto} anos. Seu voto é obrigatório. Escolha um candidato.`);
         nasc = voto;
         votacao();
     } else if (voto >= 65 && voto < 100){
+        console.log();
         console.log (`Você tem ${voto} anos. Você passou da idade obrigatória para voto. Seu voto é opcional.`);
         let menor = prompt('Quer votar?');
             if (menor == 's' || menor == 'S') {
@@ -48,50 +58,78 @@ function validaVoto(){
             }; 
         nasc = voto;
     } else {
+        console.log();
         console.log('ERRO!!!');
         
     };
 };
 
-let cand1 = 0;
-let cand2 = 0;
-let cand3 = 0;
-let nulo = 0;
-let brc = 0;
+let candi1 = {nome: 'Candidato 1', cand: 0};
+let candi2 = {nome: 'Candidato 2', cand: 0};
+let candi3 = {nome: 'Candidato 3', cand: 0};
+let nulo = {nome: 'Nulo', cand: 0};
+let brc = {nome: 'Em Branco', cand: 0};
 
+let totalVotos = 0;
 function votacao(){
     let option = 0;
 
+    console.log();
     option = parseInt(prompt('Digite o número do seu candidato: '));
         if (option == 1){
-            cand1++;
+            candi1.cand++;
+            totalVotos++;
        } else if (option == 2) {
-            cand2++;
+            candi2.cand++;
+            totalVotos++;
         } else if (option == 3) {
-            cand3++;
+            candi3.cand++;
+            totalVotos++;
         } else if (option == 4) {
-            nulo++;
+            nulo.cand++;
+            totalVotos++;
         } else if (option == 5) {
-            brc++;
+            brc.cand++;
+            totalVotos++;
         } else {
+            console.log();
             console.log('Você não pode votar com essa opção.');
         };
 };
 
 function exibirResultados(){
     let total = [];
-    console.log(`O candidato 1 recebeu ${cand1} votos.`);
-    console.log(`O candidato 2 recebeu ${cand2} votos.`);
-    console.log(`O candidato 3 recebeu ${cand3} votos.`);
-    console.log(`Tiveram ${nulo} votos nulos.`);
-    console.log(`Tiveram ${brc} votos em branco.`);
+    console.log();
+    console.log(`O candidato 1 recebeu ${candi1.cand} votos.`);
+    console.log();
+    console.log(`O candidato 2 recebeu ${candi2.cand} votos.`);
+    console.log();
+    console.log(`O candidato 3 recebeu ${candi3.cand} votos.`);
+    console.log();
+    console.log(`Tiveram ${nulo.cand} votos nulos.`);
+    console.log();
+    console.log(`Tiveram ${brc.cand} votos em branco.`);
+    console.log();
+    console.log(`Foram ${totalVotos} votos validados.`);
+    total.push(candi1);
+    total.push(candi2);
+    total.push(candi3);
+    total.push(nulo);
+    total.push(brc);
 
-    total.push(cand1);
-    total.push(cand2);
-    total.push(cand3);
-    
-    
-
+    total.sort(function(a,b) {
+        if (a.cand > b.cand){
+            return -1 
+        }; 
+        if(a.cand < b.cand) {
+            return 1
+        };
+        return 0;
+    });
+    console.log();
+    console.log('O resultado da votação foi: ');
+    console.log(total);
+};
 // INICIO PROGRAMA
 console.log();
 console.log('VOTAÇÃO');
