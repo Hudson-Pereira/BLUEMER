@@ -24,14 +24,14 @@ function dados(){
             console.log('Digite um ano válido.')
             dados();
         };
-    validaVoto();
+    autorizaVoto();
     console.log();
-    cont = prompt('Tem mais pessoas para votar? ')    
+    cont = prompt('Tem mais pessoas para votar? ').toLocaleLowerCase();    
         
 };
 let nasc = 0;
 
-function validaVoto(){
+function autorizaVoto(){
     let voto = 2021 - nasc;
     if (voto < 16){
         console.log();
@@ -39,8 +39,8 @@ function validaVoto(){
     } else if (voto >= 16 && voto < 18){
         console.log();
         console.log(`Você tem ${voto} anos. Seu voto é opcional, você decide se quer votar ou não.`);
-        let menor = prompt('Quer votar?');
-            if (menor == 's' || menor == 'S') {
+        let menor = prompt('Quer votar?').toLowerCase();
+            if (menor == 's') {
                 votacao();
             }; 
         nasc = voto;
@@ -52,8 +52,8 @@ function validaVoto(){
     } else if (voto >= 65 && voto < 100){
         console.log();
         console.log (`Você tem ${voto} anos. Você passou da idade obrigatória para voto. Seu voto é opcional.`);
-        let menor = prompt('Quer votar?');
-            if (menor == 's' || menor == 'S') {
+        let menor = prompt('Quer votar?').toLowerCase();
+            if (menor == 's') {
                 votacao();
             }; 
         nasc = voto;
@@ -145,9 +145,9 @@ console.log();
 console.log('Atenção, responda apenas com S para sim ou N para não.');
 console.log();
 
-let cont = prompt('Tem pessoas para votar? ');
+let cont = prompt('Tem pessoas para votar? ').toLowerCase();
 
-    while (cont == 's' || cont == 'S'){
+    while (cont == 's'){
         dados();      
     };
 
