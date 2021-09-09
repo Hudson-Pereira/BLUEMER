@@ -1,5 +1,7 @@
-const prompt = require('prompt-sync')();
-/*Exercício para praticar funções
+const prompt = require("prompt-sync")();
+
+/*
+Exercício para praticar funções
 Nome: Joguinho: Salão
 Objetivo: Escrever uma função que funciona como um jogo, em que a pessoa digitar as suas escolhas e o programa irá indicar o 
 resultado das escolhas.
@@ -18,19 +20,34 @@ novamente.
 - Você não escolheu nenhuma das portas. Tente novamente.
 */
 
-console.log('Jogo das portas.');
-console.log('==========================================================================================================');
+console.log("Jogo das portas");
+
+console.log(
+    "=========================================================================================================="
+);
 
 function jogo() {
-    console.log('Você está entrando no salão principal. Nesse salão existem duas portas e você tem que escolher uma.');
-    let escolha = prompt('Qual porta você deseja entrar? (Digite E / Esquerda ou D / Direita): ');
-        if (escolha == 'E' || escolha == 'Esquerda' || escolha == 'e' || escolha == 'esquerda') {
-            console.log('Você entrou na sala à esquerda, parece que não tem nada por aqui. OPS!! Tem um monstro assustador. Acho melhor você voltar correndo! AHHHHHHHHHHHHHHH!!!!!!!!!!!!');
-        } else if (escolha == 'D' || escolha == 'Direita' || escolha == 'd' || escolha == 'direita') {
-            console.log('Excelente escolha! A sala à direita estava te esperando esse tempo todo! Que maravilhoso isso. Pena que não tem nada aqui para você. :(');
-        } else {
-            console.log('Escolha uma opção válida.');
-            jogo();
-        };
-};
+    console.log(
+        "Você está entrando no salão principal. Nesse salão existem duas portas e você tem que escolher uma."
+    );
+
+    const escolha = prompt(
+        "Qual porta você deseja entrar? (Digite 'E'/'Esquerda' ou 'D'/'Direita'): "
+    ).toLowerCase();
+
+    if (escolha == "e" || escolha == "esquerda") {
+        console.log(
+            "Você entrou na sala à esquerda, parece que não tem nada por aqui. OPS!! Tem um monstro assustador. Acho melhor você voltar correndo! AHHHHHHHHHHHHHHH!!!!!!!!!!!!"
+        );
+    } else if (escolha == "d" || escolha == "direita") {
+        console.log(
+            "Excelente escolha! A sala à direita estava te esperando esse tempo todo! Que maravilhoso isso. Pena que não tem nada aqui para você. :("
+        );
+    } else {
+        console.log("Escolha uma opção válida.");
+
+        jogo();
+    }
+}
+
 jogo();
