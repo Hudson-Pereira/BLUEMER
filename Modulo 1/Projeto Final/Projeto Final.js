@@ -8,3 +8,5 @@ dia do seu personagem acabar. Você será responsável por determinar o inicio e
   interessante e seja bem específico com relação as escolhas que precisam ser feitas, para que seu jogo seja divertido!
 */
 
+//Rotina 
+

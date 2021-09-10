@@ -17,6 +17,7 @@ ok - O total de votos nulos
 ok - O total de votos em branco
 ok - Qual candidato venceu a votação
  */
+let nasc = 0;
 function dados(){
     console.log();
     nasc = +prompt('Digite o ano de nascimento com 4 dígitos(xxxx): ');
@@ -24,31 +25,34 @@ function dados(){
             console.log('Digite um ano válido.')
             dados();
         };
-    autorizaVoto();
+    autorizaVoto(nasc);
     console.log();
     cont = prompt('Tem mais pessoas para votar? ').toLocaleLowerCase();    
         
 };
-let nasc = 0;
 
-function autorizaVoto(){
-    let voto = 2021 - nasc;
+function autorizaVoto(anoNascimento){
+    let voto = 2021 - nasc;    
     if (voto < 16){
         console.log();
         console.log(`Você tem ${voto} anos. Voto Negado. Ainda não possui idade mínima de 16 anos.`);
+        return 'Negado';
     } else if (voto >= 16 && voto < 18){
         console.log();
         console.log(`Você tem ${voto} anos. Seu voto é opcional, você decide se quer votar ou não.`);
         let menor = prompt('Quer votar?').toLowerCase();
             if (menor == 's') {
+
                 votacao();
             }; 
         nasc = voto;
+        return 'Opcional';
     } else if (voto >= 18 && voto < 65){
         console.log();
         console.log(`Você tem ${voto} anos. Seu voto é obrigatório. Escolha um candidato.`);
         nasc = voto;
         votacao();
+        return 'Obrigatório';
     } else if (voto >= 65 && voto < 100){
         console.log();
         console.log (`Você tem ${voto} anos. Você passou da idade obrigatória para voto. Seu voto é opcional.`);
@@ -57,6 +61,7 @@ function autorizaVoto(){
                 votacao();
             }; 
         nasc = voto;
+        return 'Opcional';
     } else {
         console.log();
         console.log('ERRO!!!');
