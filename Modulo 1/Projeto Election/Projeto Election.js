@@ -136,6 +136,8 @@ function exibirResultados(){
     console.log();
     console.log('O resultado da votação foi: ');
     console.log(total);
+    console.log();
+    console.log(`E o vencedor da eleição foi ${total[0].nome} com ${total[0].cand} votos.`);
 };
 // INICIO PROGRAMA
 
