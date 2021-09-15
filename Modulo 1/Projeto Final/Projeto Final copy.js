@@ -33,8 +33,33 @@ class Pessoa{ //classe das pessoas da vida
     Orar(){
       sleep(2000);
       console.log('Muito bem, a melhor maneira de começar um dia é orando.');
+      console.log();
       sleep(2000);
-      console.log("Em pensamento, você orou: 'Obrigado meu Deus, pela noite que se passou e pelo dia que se iniciou.'");
+      console.log(`
+      ⣠⣦⣤⣀
+      ⠀⠀⠀⠀⢡😔⣿
+      ⠀⠀⠀⠀⠠⠜⢾⡟
+      ⠀⠀⠀⠀⠀⠹⠿⠃⠄
+      ⠀⠀⠈⠀⠉⠉⠑⠀⠀⠠⢈⣆
+      ⠀⠀⣄⠀⠀⠀⠀⠀⢶⣷⠃⢵
+      ⠐⠰⣷⠀⠀⠀⠀⢀⢟⣽⣆⠀⢃
+      ⠰⣾⣶⣤🙏⣦⣤⣴⣾⣿⣿⠞
+      ⠀⠈⠉⠉⠛⠛⠉⠉⠉⠙⠁
+      ⠀⠀⡐⠘⣿⣿⣯⠿⠛⣿⡄
+      ⠀⠀⠁⢀⣄⣄⣠⡥⠔⣻⡇
+      ⠀⠀⠀⠘⣛⣿⣟⣖⢭⣿⡇
+      ⠀⠀⢀⣿⣿⣿⣿⣷⣿⣽⡇
+      ⠀⠀⢸⣿⣿⣿⡇⣿⣿⣿⣇
+      ⠀⠀⠀⢹⣿⣿⡀⠸⣿⣿⡏
+      ⠀⠀⠀⢸⣿⣿⠇⠀⣿⣿⣿
+      ⠀⠀⠀⠈⣿⣿⠀⠀⢸⣿⡿
+      ⠀⠀⠀⠀⣿⣿⠀⠀⢀⣿⡇
+      ⠀⣠⣴⣿⡿⠟⠀⠀⢸⣿⣷
+      ⠀⠉⠉⠁⠀⠀⠀⠀⢸⣿⣿⠁ 
+      "Em pensamento, você orou: 'Obrigado meu Deus, pela noite que se passou e pelo dia que se iniciou.'"
+      `);
+      sleep(2000);
+      //console.log("Em pensamento, você orou: 'Obrigado meu Deus, pela noite que se passou e pelo dia que se iniciou.'");
       console.log();
     };
 
@@ -45,6 +70,17 @@ class Pessoa{ //classe das pessoas da vida
     };
 
     TomarCafe(){
+      console.log(`
+      ) (
+        ())
+         ) ((
+    mrf _______) _
+    .-'--------- |  
+   (C | / \ / \ / \ / \ / |
+    '-./\/\/\/\/ |
+      '_________'
+       '-------'
+      `);
       sleep(2000);
       console.log('Muito bem, nada como um bom café da manhã. Aproveite.');
       console.log();
@@ -119,6 +155,13 @@ class Pessoa{ //classe das pessoas da vida
     Joystick(){
       sleep(2000);
       console.log('Você pegou o joystick em suas mãos.');
+      console.log(`
+            ()
+            ||
+            ||
+        ___ | "" | __.._
+       / ____________ \
+       \ ____________ / ~~~. `);
       sleep(2000);
       console.log()
       console.log('Logo pensou:')
@@ -289,7 +332,17 @@ console.log(`
 ██████████
 100%`);
 sleep(5000);
+console.log('JOGO CARREGADO')
+console.clear();
 
+console.log(`
+∩ │◥███◣ ╱◥███◣
+╱◥◣ ◥████◣▓∩▓│∩ ║
+│╱◥█◣║∩∩∩ ║◥█▓ ▓█◣
+││∩│ ▓ ║∩田│║▓ ▓ ▓∩ ║
+`);
+console.log(3000);
+console.log();
 console.log(`PIPIPIPI, PIPIPIPI, PIPIPIPI...
             Hora de acordar ....`);
 sleep(2000);
@@ -422,6 +475,19 @@ while(true) {
         sleep(2000);
         console.log(`Na tela da televisão você viu as informações do jogo:`);
         console.log();
+        console.log(`
+        \ /
+        \ /
+. ===============.
+| .-----------. |
+| | | |
+| | HSC | |
+| | | | __
+| '-----------' o | | o. |
+| =============== | | :: |
+| ################# | | :: |
+'===============' '-'
+        `);
           
           const tela = Object.keys(jogo);
         sleep(2000);  
@@ -886,6 +952,15 @@ while (true) {
   };
   console.clear();
   sleep(2000);
+  console.log(`
+  ____ || ____
+  ///////////// \
+ ///////////// \
+ | _ | |
+ | [] | | [] | [] |
+ | | | | |
+  `);
+  sleep(3000);
   console.log(`Todos voltaram para o quarto do ${amigo1.nome}.
                 Espantados e rindo vocês conversaram até anoitecer.
                 E cada um voltou para sua casa.`);
