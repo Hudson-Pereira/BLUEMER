@@ -161,7 +161,9 @@ class Pessoa{ //classe das pessoas da vida
             ||
         ___ | "" | __.._
        / ____________ \
-       \ ____________ / ~~~. `);
+       \ ____________ / ~~~.
+       
+       `);
       sleep(2000);
       console.log()
       console.log('Logo pensou:')
@@ -697,8 +699,7 @@ console.log(`　＼　　　　　　☆
   
   console.log(`Assim que a voz silenciou, vieram vários inimigos para cima de você e seus amigos.`);
   sleep(2000);
-  console.log(`
-               /﹋\
+  console.log(`/﹋\
               (҂'_')
               <,︻╦╤─ ҉ - -
                /﹋\
