@@ -333,6 +333,7 @@ console.log(`
 100%`);
 sleep(5000);
 console.log('JOGO CARREGADO')
+sleep(2000);
 console.clear();
 
 console.log(`
@@ -341,7 +342,7 @@ console.log(`
 │╱◥█◣║∩∩∩ ║◥█▓ ▓█◣
 ││∩│ ▓ ║∩田│║▓ ▓ ▓∩ ║
 `);
-console.log(3000);
+sleep(3000);
 console.log();
 console.log(`PIPIPIPI, PIPIPIPI, PIPIPIPI...
             Hora de acordar ....`);
