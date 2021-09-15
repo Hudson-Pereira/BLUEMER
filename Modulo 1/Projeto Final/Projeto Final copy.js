@@ -36,7 +36,7 @@ class Pessoa{ //classe das pessoas da vida
       console.log();
       sleep(2000);
       console.log(`
-      ⣠⣦⣤⣀
+          ⣠⣦⣤⣀
       ⠀⠀⠀⠀⢡😔⣿
       ⠀⠀⠀⠀⠠⠜⢾⡟
       ⠀⠀⠀⠀⠀⠹⠿⠃⠄
@@ -216,7 +216,7 @@ class Personagem { // classe dos personagens do jogo
     Correr(){
       sleep(2000);
       console.log(`Você está correndo desesperadamente.
-                    Mas levou dnaos durante a corrida e perdeu 30% de vida.
+                    Mas levou danos durante a corrida e perdeu 30% de vida.
                     Quem sabe da próxima vez você tenha mais coragem.`)
     };
 
@@ -298,7 +298,10 @@ function fim(){
   console.log(`O dia acabou, você está em sua casa se preparando para dormir e pensando:
               "Será que isso aconteceu mesmo??"
               E acabou pegando no sono.`);
-};
+              sleep(3000);
+  console.log('OBRIGADO POR JOGAR.');
+
+            };
 // Inicio do programa
 console.log('======================================== Ficção Interativa =========================================');
 console.log();
@@ -310,28 +313,28 @@ console.log(`
 
 █▒▒▒▒▒▒▒▒▒
 10%`);
-sleep(1500);
+sleep(1200);
 console.log(`
 
 ███▒▒▒▒▒▒▒
 30%`);
-sleep(2000);
+sleep(1400);
 
 console.log(`
 
 █████▒▒▒▒▒
 50%`);
-sleep(2500);
+sleep(1600);
 console.log(`
 
 ███████▒▒▒
 80%`);
-sleep(3000);
+sleep(1800);
 
 console.log(`
 ██████████
 100%`);
-sleep(5000);
+sleep(2000);
 console.log('JOGO CARREGADO')
 sleep(2000);
 console.clear();
@@ -547,7 +550,7 @@ while(true) {
               ${amigo2.nome}: Nossa, que lugar é esse?
               ${amigo1.nome}: Será que estamos no jogo? Esse lugar parece muito com a capa do jogo....`);
   console.log();
-  sleep(5000);
+  sleep(7000);
   console.log('Todos analisaram o local e se viraram para conversar...');
   sleep(2000);
   console.log(`Todos gritaram: 
@@ -555,7 +558,7 @@ while(true) {
               ${user.nome}: Quem são vocês?
               ${amigo1.nome}: Somos nós mesmos, mas nos corpos dos personagens.
               ${amigo3.nome}: Tem uma espécie de botão aqui, o que ele faz?`);
-  sleep(5000);
+  sleep(7000);
   console.log();
     console.log('Ao pressionar o botão, apareceu um tipo de holograma com algumas informações: ');
     console.log();
@@ -614,7 +617,7 @@ while(true) {
                 RAAAAAAAAAAAAAAWWWWWWWWWWWWWWWWWWWWHHHHHHHHHHHHHH!!!!!!!!!!!!`);
   sleep(2000);
   console.log('..................................................................');
-  sleep(5000);
+  sleep(7000);
   console.log(`
                 VUUUUUUUUUUSSSSSSSSSSSHHHHHHHHHHHHHHH
                 CABRUUUUUMMMMMMMMMMMMMMM
@@ -642,7 +645,7 @@ console.log(`　＼　　　　　　☆
   sleep(1500);
   console.log(`Apontou o ${pnj3.nome} para o horizonte, lá longe....
                 E vocês viram...`);
-  sleep(5000);
+  sleep(7000);
   console.log(`
   ━━╮╰╮┊┊┊┊┊┊
 ┊┊╰╮╰━▂▂▂▂┊┊┊┊┊┊
@@ -694,10 +697,12 @@ console.log(`　＼　　　　　　☆
   
   console.log(`Assim que a voz silenciou, vieram vários inimigos para cima de você e seus amigos.`);
   sleep(2000);
-  console.log(`/﹋\
+  console.log(`
+               /﹋\
               (҂'_')
               <,︻╦╤─ ҉ - -
-               /﹋\ `);
+               /﹋\
+                `);
   sleep(2000);
   console.log(`
                 Enquanto seus amigos lutam, você tem que tomar decisões.
@@ -739,6 +744,16 @@ console.log(`　＼　　　　　　☆
   console.log(`Vocês conseguiram passar a primeira fase.
                 Pelo caminho que seguiram, encontraram diversas dificuldades.
                 A primeira foi uma rocha enorme impedindo o caminho.`);
+  sleep(2000);
+  console.log(`
+  Enquanto seus amigos lutam, você tem que tomar decisões.
+  P - Pular
+  B - Bater 
+  O - Olhar 
+  C - Correr
+  M - Esconder
+  E - Especial`);
+  sleep(2000);
                 while (true) {
                   var acao2 = prompt('Escolha qual ação tomar: ').toLowerCase();
                     if (acao2[0] == 'p' || acao2[0] == 'b' || acao2[0] == 'o' || acao2[0] == 'c' || acao2[0] == 'm') {
@@ -767,7 +782,7 @@ console.log(`　＼　　　　　　☆
   console.log(`${persUser.nome}: Graças a Deus, conseguimos passar...`);
   sleep(1500);
   console.log('Mas, antes de você terminar sua frase, apareceram umas aranhas-monstro gigantes, e vocês sairam correndo.');
-  sleep(1000);
+  sleep(3000);
   for(let i=0;i<=4;i++){
     console.log(`
   _______0____________________________0
@@ -802,8 +817,16 @@ console.log(`　＼　　　　　　☆
     `);
     sleep(1000);
   };
-  sleep(5000);
-
+  sleep(7000);
+  console.log(`
+  Enquanto seus amigos lutam, você tem que tomar decisões.
+  P - Pular
+  B - Bater 
+  O - Olhar 
+  C - Correr
+  M - Esconder
+  E - Especial`);
+  sleep(2000);
   while (true) {
     var acao3 = prompt('Escolha qual ação tomar: ').toLowerCase();
       if (acao3[0] == 'p' || acao3[0] == 'b' || acao3[0] == 'o' || acao3[0] == 'c' || acao3[0] == 'm') {
@@ -831,7 +854,7 @@ console.log(`　＼　　　　　　☆
   sleep(2000);
   console.log(`${pnj3.nome}: Ufa, que alívio.
               ${persUser.nome}: Ainda bem que conseguimos passar. Vamos em frente.`);
-  sleep(5000);
+  sleep(7000);
   console.log(`
   VUUUUUUUUUUSSSSSSSSSSSHHHHHHHHHHHHHHH
   CABRUUUUUMMMMMMMMMMMMMMM
@@ -877,12 +900,22 @@ sleep(3000);
 ━━━╯╱╱╭━━━━━━━━╯
 
   `);
-sleep(5000);
+sleep(7000);
 console.log(`E agora, chegou o lider, ${enemy.nome}
               Ele começou atacando logo de cara, sem ao menos se apresentar.`);
 enemy.Especial();
+sleep(3000);
 console.log('Com esse ataque, metade de vocês morreram.');
-
+sleep(2000);
+console.log(`
+  Enquanto seus amigos lutam, você tem que tomar decisões.
+  P - Pular
+  B - Bater 
+  O - Olhar 
+  C - Correr
+  M - Esconder
+  E - Especial`);
+  sleep(2000);
 while (true) {
   var final = prompt('Escolha qual ação tomar: ').toLowerCase();
     if (final[0] == 'p' || final[0] == 'b' || final[0] == 'o' || final[0] == 'c' || final[0] == 'm', final[0] == 'e') {
@@ -910,12 +943,22 @@ while (true) {
       } else {
         invalida();
       };
-sleep(2000);
+sleep(3000);
 console.log(`Espere, o que é isso????
               Parece que você ganhou um bônus, seus companheiros mortos todos voltaram por mais uma rodada apenas.`);
-sleep(2000);
+sleep(3000);
 console.log(`Gidorah está recuperando suas forças, é a chance de vocês atacarem com tudo.
             Usem o especial.`);
+sleep(2000);
+console.log(`
+  Enquanto seus amigos lutam, você tem que tomar decisões.
+  P - Pular
+  B - Bater 
+  O - Olhar 
+  C - Correr
+  M - Esconder
+  E - Especial`);
+  sleep(2000);
 while (true) {
   var final2 = prompt('Escolha qual ação tomar: ').toLowerCase();
     if (final2[0] == 'e') {
@@ -925,7 +968,6 @@ while (true) {
     };
 };              
       if(final2[0] == 'e') {
-        persUser.Especial();
         console.log(`Muito bem, todos usaram seus especiais`);
         sleep(2000);  
         console.log(`
@@ -933,13 +975,14 @@ while (true) {
                     ${pnj1.nome}: ${pnj1.especial}
                     ${pnj2.nome}: ${pnj2.especial}
                     ${pnj3.nome}: ${pnj3.especial}`);
+                    sleep(2000);
       } else {
         invalida();
       };
   sleep(2000);
   console.log(`RRRRAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHWWWWWWWWWWWWWWWWWW
                 ${enemy.nome} caiu....`);
-  sleep(2000);
+  sleep(3000);
   console.log(`YYYYYYYYRRRRRRRRRRRRRUUUUUUUUUUUUU
                 Conseguimos.
                 Vencemos o chefe.`);
@@ -985,7 +1028,7 @@ while (true) {
       `);
       sleep(2000);
       console.log('SCRIIIIIIIIIIIIIIIIIIIICCCCCCHHHHHHHHHHHHHHHHHH');
-      sleep(5000);
+      sleep(7000);
       console.log(`　＼　　　　　　☆
 　　　　　　　　　　　　　|　　　　　☆
 　　　　　　　　　　(⌒ ⌒ヽ　　　/
@@ -996,16 +1039,31 @@ while (true) {
 　　　　　（⌒::　　　::　　　　　::⌒　）
 　　 　／　（　　　　ゝ　　ヾ　丶　　　─
 `);
-    sleep(5000);
+    sleep(7000);
     console.log(`Infelizmente houve um acidente, um avião caiu na rua e em cima do ônibus que você estava.
                 Não houve sobreviventes.`);
-    sleep(2000);
+    sleep(3000);
     console.log(`
+    ████▀░░░░░░░░░░░░░░░░░▀████ 
+    ███│░░░░░░░░░░░░░░░░░░░│███
+    ██▌│░░░░░░░░░░░░░░░░░░░│▐██ 
+    ██░└┐░░░░░░░░░░░░░░░░░┌┘░██ 
+    ██░░└┐░░░░░░░░░░░░░░░┌┘░░██ 
+    ██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██ 
+    ██▌░│██████▌░░░▐██████│░▐██ 
+    ███░│▐███▀▀░░▄░░▀▀███▌│░███ 
+    ██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██ 
+    ██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██ 
+    ████▄─┘██▌░░░░░░░▐██└─▄████ 
+    █████░░▐█─┬┬┬┬┬┬┬─█▌░░█████ 
+    ████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████ 
+    █████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████ 
+    ███████▄░░░░░░░░░░░▄█████
 
     `);
 
     jogo.Perdedor();
-
+    sleep(10000)
     } else {
       erro();
     };
