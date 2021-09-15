@@ -261,6 +261,34 @@ console.log('======================================== Ficção Interativa ======
 console.log();
 console.log('=======================================Perdidos na Floresta=========================================');
 
+console.log('Loading…');
+sleep(1000);
+console.log(`
+
+█▒▒▒▒▒▒▒▒▒
+10%`);
+sleep(1500);
+console.log(`
+
+███▒▒▒▒▒▒▒
+30%`);
+sleep(2000);
+
+console.log(`
+
+█████▒▒▒▒▒
+50%`);
+sleep(2500);
+console.log(`
+
+███████▒▒▒
+80%`);
+sleep(3000);
+
+console.log(`
+██████████
+100%`);
+sleep(5000);
 
 console.log(`PIPIPIPI, PIPIPIPI, PIPIPIPI...
             Hora de acordar ....`);
@@ -897,7 +925,7 @@ while (true) {
                 Não houve sobreviventes.`);
     sleep(2000);
     console.log(`
-      
+
     `);
 
     jogo.Perdedor();
