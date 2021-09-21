@@ -1,0 +1,66 @@
+body{
+    background-image: url("../images/EU.jpeg");
+}
+h1{
+    border: solid 3px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#EU{ 
+    border: solid 3px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+#pEu{
+    color: blue;
+    border: solid black 3px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+#blue{
+    border: solid 3px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+#pBlue{
+    color: blue;
+    border: solid black 3px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+#minhas{
+    border: solid 3px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+#pMinhas{
+    color: blue;
+    border: solid black 3px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+nav{
+    text-align: center;
+    height: 100px;
+}
+.btn{
+    background-color: black;
+    color: whitesmoke;
+    border: solid black 1px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+iframe{
+    margin-left: 350px;
+}
+footer{
+    color: white
+}
