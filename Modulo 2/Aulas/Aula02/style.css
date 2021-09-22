@@ -1,0 +1,58 @@
+body {}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    background-image: url(../Aula02/images/lua.jpg);
+    height: 250px;
+    width: 100%;
+}
+
+#sGame {}
+
+#name {
+    text-align: center;
+    padding: 0 0 0 0;
+    background-color: rgb(40, 54, 240);
+}
+
+#hName {
+    padding: 20px 0 0 0;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+#sit {
+    font-size: 30px;
+    padding: 0 0 0 0;
+}
+
+.sit {
+    font-size: 20px;
+}
+
+#pers {
+
+    margin: 0 0 0 200px;
+}
+
+#game {
+    color: mediumblue;
+    font-size: 40px;
+    padding: 80px 0 0 0;
+    margin: 0 0 0 100px;
+    float: left;
+}
+
+.btn {
+    padding: 10px 5px 10px 5px;
+    margin: 0 0 20px 0;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: midnightblue;
+    color: azure
+}
+
+footer {}
