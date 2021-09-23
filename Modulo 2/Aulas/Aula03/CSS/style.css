@@ -1,7 +1,64 @@
 body {
-    background-color: LightSteelBlue;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/fundo.jpg);
 }
 
 h1 {
+    font-size: 70px;
+    text-align: center;
     color: DarkSlateBlue;
     font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+
+h2 {
+    color: rgb(151, 137, 247);
+    font-family: Stencil Std, fantasy;
+    font-size: 50px;
+}
+
+.texto {
+    border: solid 2px white;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#texto1,
+#texto2 {
+    border: solid 2px white;
+    padding: 10px;
+}
+
+a {
+    margin: 10px;
+    padding: 5px;
+    border: solid 2px white;
+    border-radius: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: white;
+}
+
+a:hover {
+    background-color: DarkSlateBlue;
+    color: white;
+}
+
+#nav {
+    margin: 25px;
+}
+
+footer {
+    color: white;
+}
+
+#listas {
+    color: white;
+}
