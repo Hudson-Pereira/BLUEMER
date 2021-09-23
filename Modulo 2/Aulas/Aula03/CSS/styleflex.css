@@ -1,0 +1,52 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.container {
+    background-color: rgb(238, 79, 79);
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.primeiro {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.segundo {
+    order: 3;
+    background-color: purple;
+    width: 250px;
+    height: 100px;
+    padding: 60px;
+    border-radius: 100px;
+}
+
+.terceiro {
+    padding: 10px;
+    background-color: pink;
+    width: 200px;
+    max-height: 300px;
+    overflow: scroll;
+    border-radius: 10px;
+}
+
+.quarto {
+    order: -1;
+    text-align: center;
+    background-color: yellow;
+    width: 400px;
+}
