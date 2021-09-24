@@ -1,14 +1,21 @@
 body {}
 
 h1 {
-    text-align: center;
-    color: aliceblue;
-    background-image: url(../Aula02-projeto1/images/lua.jpg);
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-image: url(../Aula02-projeto1/images/sonicboom.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
     height: 250px;
     width: 100%;
 }
 
-#sGame {}
+#sGame {
+    display: flex;
+    justify-content: baseline;
+}
 
 #name {
     text-align: center;
@@ -17,12 +24,16 @@ h1 {
 }
 
 #hName {
+    display: flex;
+    justify-content: center;
     padding: 20px 0 0 0;
     font-family: monospace;
     font-size: 50px;
 }
 
 #sit {
+    display: flex;
+    justify-content: center;
     font-size: 30px;
     padding: 0 0 0 0;
 }
@@ -44,13 +55,13 @@ h1 {
     float: left;
 }
 
-.btn {
+#btn {
     padding: 10px 5px 10px 5px;
     margin: 0 0 20px 0;
     border-radius: 30px;
 }
 
-.btn:hover {
+#btn:hover {
     background-color: midnightblue;
     color: azure
 }
