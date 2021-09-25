@@ -53,4 +53,8 @@ h1 {
     color: azure
 }
 
-footer {}
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
