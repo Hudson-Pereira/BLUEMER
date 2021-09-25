@@ -13,7 +13,7 @@ Btn.addEventListener("click", function(){
         pers.src = "../Projeto1/images/Rouge.png"; 
     } else if (nPers.textContent == "Rouge"){
         nPers.textContent = "Knuckles";
-        pers.src = "../Projeto1/images/knuckles.png";
+        pers.src = "../Projeto1/images/Knuckles.png";
     } else if (nPers.textContent == "Knuckles"){
         nPers.textContent = "Amy Rose";
         pers.src = "../Projeto1/images/Amy_Rose.png";
