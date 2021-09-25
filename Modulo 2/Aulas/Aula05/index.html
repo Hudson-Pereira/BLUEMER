@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=style.css>
+    <title>Aula 04 - Módulo 2</title>
+</head>
+<body>
+    <header>
+        <h1>Aula 04 do Módulo 2</h1>
+    </header>
+    <main>
+        <section id = "nav">
+            <nav>
+                <input type="button" class="btn" value = "ÏMC" onclick="sec1()">
+                <input type="button" class="btn" value = "LISTA" onclick="sec2()">
+            </nav>
+        </section>
+        <section id = "IMC">
+            <h2>IMC</h2>
+                <section id="primeiro">
+                    <section id="dataUser">
+                        <input type="text" id="nome" placeholder="Digite seu nome">
+                        <input type="number" min="0" id="idade" placeholder="Digite sua idade"> 
+                        <!-- <input type="button" value="Enviar" onclick="dado()"> -->
+                        <!-- <p id="dados"> </p> -->
+                    </section>
+                </section>
+                <section id="segundo">
+                    <section id="dataIMC">
+                        <input type="text" id="peso" placeholder="Digite seu peso">
+                        <input type="text" min="0" id="altura" placeholder="Digite sua altura">  
+                    </section> 
+                    <input type="button" class="btn" value="Enviar" onclick="dado()">
+                    <span id="dados"> </span>
+                </section>
+        </section>
+        <section id="Listas">
+            <h2>Listas automática</h2>
+                <section id = "lista">
+                        <input type = "text" id="task" placeholder = "Digite uma tarefa">
+                        <input type = "button" class="btn" id = "btn" value = "Inserir">
+                </section>
+                <section id="tarefas">
+                    <ul id="tasks">
+
+                    </ul>
+                </section>
+        </section>
+    
+        <footer>
+            &copy; Todos os direitos reservados a mim.
+        </footer>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

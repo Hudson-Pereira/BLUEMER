@@ -1,0 +1,47 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#IMC {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+
+}
+
+#Listas {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+
+}
+
+#dados {
+    color: red;
+    font-size: 30px;
+}
+
+.btn {
+    margin: 5px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: midnightblue;
+    color: azure
+}
+
+
+footer {}
