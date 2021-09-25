@@ -1,20 +1,32 @@
-body {}
+body {
+    padding: 0px;
+    margin: 0px;
+
+}
 
 h1 {
     display: flex;
     justify-content: center;
-    color: black;
+    color: red;
+    font-size: 50px;
+    }
+
+    #sGame {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     background-image: url(../Aula02-projeto1/images/sonicboom.jpg);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 70%;
     background-position: center;
-    height: 250px;
-    width: 100%;
 }
 
-#sGame {
-    display: flex;
-    justify-content: baseline;
+#pers {
+    height: 25%;
+    width: 25%;
+    margin: 0 0 0 0px;
 }
 
 #name {
@@ -26,38 +38,12 @@ h1 {
 #hName {
     display: flex;
     justify-content: center;
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
     font-family: monospace;
     font-size: 50px;
 }
-
-#sit {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    padding: 0 0 0 0;
-}
-
-.sit {
-    font-size: 20px;
-}
-
-#pers {
-
-    margin: 0 0 0 200px;
-}
-
-#game {
-    color: mediumblue;
-    font-size: 40px;
-    padding: 80px 0 0 0;
-    margin: 0 0 0 100px;
-    float: left;
-}
-
 #btn {
     padding: 10px 5px 10px 5px;
-    margin: 0 0 20px 0;
     border-radius: 30px;
 }
 
