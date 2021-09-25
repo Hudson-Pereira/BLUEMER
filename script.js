@@ -11,11 +11,9 @@ function user(){
     
         var sec = document.querySelector("#projetos");
         
-            if (sec.style.display === "none") { // verificando o style do item
-                sec.style.display = "flex"; //mudando o style do item
-            } else {
-                sec.style.display = "none"
-            };
+           
+        sec.style.display = "flex"; //mudando o style do item
+            
         
         
 };
