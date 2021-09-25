@@ -9,15 +9,15 @@ h1 {
     justify-content: center;
     color: red;
     font-size: 50px;
-    }
+}
 
-    #sGame {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    background-image: url(../Aula02-projeto1/images/sonicboom.jpg);
+#sGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../Projeto1/images/sonicboom.jpg);
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
@@ -42,6 +42,7 @@ h1 {
     font-family: monospace;
     font-size: 50px;
 }
+
 #btn {
     padding: 10px 5px 10px 5px;
     border-radius: 30px;
