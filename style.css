@@ -48,6 +48,16 @@ p {
     background-color: #1E90FF;
 }
 
+#lista {
+    color: black;
+}
+
+#lista:hover {
+    border-color: white;
+    color: white;
+    background-color: black;
+}
+
 #projetos {
     display: none;
     justify-content: center;

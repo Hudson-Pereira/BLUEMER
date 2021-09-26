@@ -36,14 +36,19 @@ function dado(){
 };
 
     const btn = document.querySelector("#btn");
-
+    
     btn.addEventListener("click", function(){
-    const li = document.createElement("li"); //criando li da lista
     const tarefa = document.querySelector("#task").value;
+        if(tarefa == "") {
+            alert("O campo tarefa não pode ficar em branco.");
+        } else {
+        const li = document.createElement("li"); //criando li da lista
+        const tarefa = document.querySelector("#task").value;
 
-    const taskText = document.createTextNode(tarefa); //criando o texto na variavel
-    li.appendChild(taskText); //add o texto na lista
+        const taskText = document.createTextNode(tarefa); //criando o texto na variavel
+        li.appendChild(taskText); //add o texto na lista
 
-    document.querySelector("#tasks").appendChild(li); // add a lista na ul
-    document.querySelector("#task").value = ""; //zerando o campo
+        document.querySelector("#tasks").appendChild(li); // add a lista na ul
+        document.querySelector("#task").value = ""; //zerando o campo
+        };
 });
