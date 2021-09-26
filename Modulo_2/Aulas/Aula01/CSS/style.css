@@ -1,5 +1,6 @@
 body{
-    background-image: url("../images/EU.jpeg");
+    /* background-image: url("../images/EU.jpeg"); */
+    background-color: white;
 }
 h1{
     border: solid 3px;
@@ -67,8 +68,18 @@ a:hover{
     background-color: aliceblue;
     color: black;
 }
-iframe{
-    margin-left: 350px;
+#img {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 60%;
+
+}
+
+img {
+    display: flex;
+    border: solid 1px black;
+    margin-left: 50%;
 }
 footer{
     color: white
