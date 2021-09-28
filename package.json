@@ -1,0 +1,23 @@
+{
+  "name": "bluemer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ajuda.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hudson-Pereira/BLUEMER.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hudson-Pereira/BLUEMER/issues"
+  },
+  "homepage": "https://github.com/Hudson-Pereira/BLUEMER#readme"
+}
