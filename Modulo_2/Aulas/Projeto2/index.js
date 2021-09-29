@@ -12,8 +12,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/index", (req, res) => {
-    
-    res.render("index", { titulo: "Pokédex" });
+    const conteudos = ["Nome","Tipo","Altura","Peso"]
+    res.render("index", { titulo: "Pokédex", conteudos: conteudos });
 });
 
 app.get("/test", (req, res) => {
@@ -22,7 +22,12 @@ app.get("/test", (req, res) => {
 
 app.get("/cadastro", (req, res) => {
     res.render("cadastro");
-})
+});
+
+app.get("/details", (req, res) => {
+    const conteudos = ["Nome","Tipo","Altura","Peso"]
+    res.render("details", { conteudos: conteudos });
+});
 
 
 //liga o servidor na porta 3000
