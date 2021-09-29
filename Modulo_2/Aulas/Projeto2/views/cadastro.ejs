@@ -19,36 +19,36 @@
         <h1>CADASTRO</h1>
     </header>
     <main>
-        <section id="dados">
-            <p>IMAGEM</p>
+        <form id="dados" action="/details" method="POST">
+            <label for="imagem"><p>IMAGEM</p></label>
             <article>
-                <input type="text" placeholder="URL DA IMAGEM">
+                <input type="text" id= "imagem" name="imagem" placeholder="URL DA IMAGEM">
             </article>
-            <p>NOME</p>
+            <label for="name"><p>NOME</p></label>   
             <article>
-                <input type="text" placeholder="DIGITE O NOME DO POKEMON">
+                <input type="text" id="name" name="name" placeholder="NOME DO POKEMON">
             </article>
-            <p>NUMERO</p>
+            <label for="num"><p>NUMERO</p></label>
             <article>
-                <input type="text" placeholder="DIGITE O NUMERO DO POKEMON">
+                <input type="text" id="num" name="num" placeholder="NUMERO DO POKEMON">
             </article>
-            <p>TIPO</p>
+            <label for="type"><p>TIPO</p></label>
             <article>
-                <input type="text" placeholder="DIGITE O TIPO DO POKEMON">
+                <input type="text" id="type" name="type" placeholder="TIPO DO POKEMON">
             </article>
-            <p>HABILIDADE</p>
+            <label for="hab"><p>HABILIDADE</p></label>
             <article>
-                <input type="text" placeholder="DIGITE A HABILIDADE DO POKEMON">
+                <input type="text" id="hab" name="hab" placeholder="HABILIDADE DO POKEMON">
             </article>
-            <p>ALTURA</p>
+            <label for="alt"><p>ALTURA</p></label>
             <article>
-                <input type="text" placeholder="DIGITE A ALTURA DO POKEMON">
+                <input type="text" id="alt" name="alt" placeholder="ALTURA DO POKEMON">
             </article>
-            <p>PESO</p>
+            <label for="peso"><p>PESO</p></label>
             <article>
-                <input type="text" placeholder="DIGITE O PESO DO POKEMON">
+                <input type="text" id="peso" name="peso" placeholder="PESO DO POKEMON">
             </article>
-            <input type="button" id="enviar" value="SALVAR"><a href="./details"></a></button>
+            <button type="submit" id="enviar">Enviar</button>
         </section>
     </main>
 </body>

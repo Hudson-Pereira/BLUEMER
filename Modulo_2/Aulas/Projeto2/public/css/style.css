@@ -4,8 +4,8 @@ body{
     background-color: red;
     width: 100%;
     height: 100%;
-    /* background: url("/img/fundo.png");
-    background-repeat: no-repeat; */
+    background: url("/img/fundo-.jpg");
+    background-repeat: no-repeat;
 }
 
 #pok{
@@ -249,12 +249,15 @@ a{
 #enviar{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100px;
     height: 50px;
-    float: left;
+    /* float: left; */
     color: black;
     margin: solid black 2px;
     border-radius: 30px;
+    font-family: 'Noto Serif', serif;
+
 }
 
 #enviar:hover{
