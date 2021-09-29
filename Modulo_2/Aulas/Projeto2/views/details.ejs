@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+   
+    <title> Detalhes</title>
 </head>
 <body>
     <header>
-        <nav><p id="home"><a href="./index">HOME</a></p></nav>
+        <nav>
+            <button class="pokedex-mode black-button"><a href="./index">HOME</a></button>
+            <button class="game-mode black-button"><a href="./cadastro">CADASTRAR</a></button>
+        </nav>
         <h1>Detalhes</h1>
     </header>
     <main>
-        <ul>
-            <% conteudos.forEach(item => { %>
-            <li><%= item %></li>
+        <ul id="det">
+            <% pokedados.forEach(item => { %>
+                <img id="tela" src="<%= item.img %>" />
+                <section id="poke"><h2>Num: </h2><article><%= item.num %></article></section>
+                <section id="poke"><h2>Nome: </h2><article><%= item.name %></article></section>
+                <section id="poke"><h2>Tipo: </h2><article><%= item.type %></article></section>
+                <section id="poke"><h2>Descrição: </h2><article><%= item.desc %></article></section>
+                <section id="poke"><h2>Altura: </h2><article><%= item.alt %></article></section>
+                <section id="poke"><h2>Peso: </h2><article><%= item.peso %></article></section>
+                <section id="poke"><h2>Habilidade: </h2><article><%= item.hab %></article></section>
             <% }) %>
         </ul>
     </main>

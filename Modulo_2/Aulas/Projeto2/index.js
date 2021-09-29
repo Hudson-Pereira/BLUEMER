@@ -25,8 +25,8 @@ app.get("/cadastro", (req, res) => {
 });
 
 app.get("/details", (req, res) => {
-    const conteudos = ["Nome","Tipo","Altura","Peso"]
-    res.render("details", { conteudos: conteudos });
+    const conteudos = [{img: "/img/charmander.jpg", num:"001", name: "Charmander",type: "Fogo",desc: "Descricao", alt: "0.6",peso: "8.5", hab:"Chamas"}]
+    res.render("details", { pokedados: conteudos });
 });
 
 
