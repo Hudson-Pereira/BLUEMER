@@ -12,12 +12,17 @@ app.get("/", (req, res) => {
 });
 
 app.get("/index", (req, res) => {
+    
     res.render("index", { titulo: "Pokédex" });
 });
 
 app.get("/test", (req, res) => {
     res.render("test", { test: "Hudson" });
 });
+
+app.get("/cadastro", (req, res) => {
+    res.render("cadastro");
+})
 
 
 //liga o servidor na porta 3000
