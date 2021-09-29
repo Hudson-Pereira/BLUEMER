@@ -15,6 +15,10 @@ app.get("/index", (req, res) => {
     res.render("index", { titulo: "Pokédex" });
 });
 
+app.get("/test", (req, res) => {
+    res.render("test", { test: "Hudson" });
+});
+
 
 //liga o servidor na porta 3000
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
