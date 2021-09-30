@@ -2,7 +2,7 @@ const express = require("express");//importa modulo express
 const path = require("path"); //importando path
 
 const app = express();//instancia uma referencia do express no projeto
-const port = 5500;
+const port = 3000;
 
 app.set("view engine", "ejs"); // set engine para trabalhar com EJS
 app.use(express.static(path.join(__dirname, "public"))); //set public como raiz

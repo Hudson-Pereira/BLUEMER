@@ -1,10 +1,11 @@
 body{
+    
     padding: 0px;
     margin: 0px;
     background-color: red;
     width: 100%;
     height: 100%;
-    background: url("/img/fundo-.jpg");
+    background: url("/img/fundo.png");
     /* background-repeat: no-repeat; */
 }
 
@@ -192,7 +193,8 @@ ul {
     input {
       width: 93%;
       height: 50px;
-      margin-top: 30px;
+      margin-top: 15px;
+      margin-bottom: 15px;
       padding: 0 10px;
       background-color: #E6E6E6;
       font-family: 'Press Start 2P';
@@ -242,7 +244,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: black;
+    color: blue;
     font-size: 2rem;
     font-family: 'Noto Serif', serif;
 }
