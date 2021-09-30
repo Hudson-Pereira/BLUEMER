@@ -2,12 +2,14 @@ const express = require("express");//importa modulo express
 const path = require("path"); //importando path
 
 const app = express();//instancia uma referencia do express no projeto
-const port = 3000;
+const port = 5500;
 
 app.set("view engine", "ejs"); // set engine para trabalhar com EJS
 app.use(express.static(path.join(__dirname, "public"))); //set public como raiz
 app.use(express.urlencoded());
 
+
+var pokemons = [];
 app.get("/", (req, res) => {
     res.send("Hello world uhuuuu");
 });
@@ -32,9 +34,12 @@ app.get("/details", (req, res) => {
 
 app.post("/details", (req, res) => {
     
-    const {imagem, name, num, type, hab, alt, peso} = req.body;
+    const {imagem, name, num, type, desc, hab, alt, peso} = req.body;
 
-    res.send({imagem: imagem, name: name, num: num, type: type, hab: hab, alt: alt, peso: peso});
+    const pokedados = [{img: imagem, name: name, num: num, type: type, desc: desc, hab: hab, alt: alt, peso: peso}];
+    pokemons.push(pokedados);
+    console.log(pokemons);
+    res.render("details", {pokedados: pokedados, todos: pokemons});
 });
 
 app.get("/formulario", (req, res) => {
@@ -42,9 +47,14 @@ app.get("/formulario", (req, res) => {
 });
 
 app.post("/recebeform", (req,res) => {
-    const {nome, email, senha} = req.body;
+    const {nome, email, senha} = req.body; // recuperando via http post
+    const infor = {nome: nome, email: email, senha: senha, message: `Usuário ${nome} cadastrado com sucesso.`};
+//construindo JSON com informacoes
+    setTimeout(() => {
+        infor.message = ""
+    },1000);
 
-    res.send({nome: nome, email: email, senha: senha});
+    res.render("recebeform", infor); //renderizando e usando o JSON para exibir na tela
 });
 
 

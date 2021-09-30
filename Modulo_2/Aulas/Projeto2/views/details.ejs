@@ -22,7 +22,7 @@
     <main>
         <ul id="det">
             <% pokedados.forEach(item => { %>
-                <img id="tela" src="<%= item.img %>" />
+                <img id="tela" src="<%= item.img %>"/>
                 <section id="poke"><h2>Num: </h2><article><%= item.num %></article></section>
                 <section id="poke"><h2>Nome: </h2><article><%= item.name %></article></section>
                 <section id="poke"><h2>Tipo: </h2><article><%= item.type %></article></section>
@@ -32,6 +32,23 @@
                 <section id="poke"><h2>Habilidade: </h2><article><%= item.hab %></article></section>
             <% }) %>
         </ul>
+    <% if(todos.length !== 0) { %>
+        <ul id="det">
+            <% todos.forEach(item => { %>
+                <img id="tela" src="<%= item.img %>"/>
+                <section id="poke"><h2>Num: </h2><article><%= item.num %></article></section>
+                <section id="poke"><h2>Nome: </h2><article><%= item.name %></article></section>
+                <section id="poke"><h2>Tipo: </h2><article><%= item.type %></article></section>
+                <section id="poke"><h2>Descrição: </h2><article><%= item.desc %></article></section>
+                <section id="poke"><h2>Altura: </h2><article><%= item.alt %></article></section>
+                <section id="poke"><h2>Peso: </h2><article><%= item.peso %></article></section>
+                <section id="poke"><h2>Habilidade: </h2><article><%= item.hab %></article></section>
+            <% }) %>
+        </ul>
+    <% } else { %>
+        <section>FIM</section>
+   <% }; %>
     </main>
+<script src="../public/js/script.js"></script>
 </body>
 </html>
