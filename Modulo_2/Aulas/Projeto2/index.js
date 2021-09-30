@@ -25,8 +25,13 @@ app.get("/cadastro", (req, res) => {
     res.render("cadastro");    
 });
 
+app.get("/details", (req, res) => {
+    const conteudos = [{img: "/img/charmander.jpg", num:"001", name: "Charmander",type: "Fogo",desc: "Descricao", alt: "0.6",peso: "8.5", hab:"Chamas"}]
+    res.render("details", { pokedados: conteudos});
+});
+
 app.post("/details", (req, res) => {
-    // const conteudos = [{img: "/img/charmander.jpg", num:"001", name: "Charmander",type: "Fogo",desc: "Descricao", alt: "0.6",peso: "8.5", hab:"Chamas"}]
+    
     const {imagem, name, num, type, hab, alt, peso} = req.body;
 
     res.send({imagem: imagem, name: name, num: num, type: type, hab: hab, alt: alt, peso: peso});

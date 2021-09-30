@@ -24,8 +24,8 @@ h1{
   #pokedex {
     display: flex;
     justify-content: center;
-    width: 800px;
-    height: 600px;
+    width: 70%;
+    height: 70%;
     margin: auto;
     background-color: #dd0b2d;
     border: #88061c 10px solid;
@@ -60,7 +60,8 @@ h1{
     grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: 7;
-    margin: 0 30px;  }
+    margin: 0 30px;
+    }
 .stats-display {
     background-color: #9fdab1;
     border-radius: 0%;
