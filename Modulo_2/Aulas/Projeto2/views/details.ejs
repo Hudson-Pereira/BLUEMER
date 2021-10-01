@@ -11,7 +11,12 @@
    
     <title> Detalhes</title>
 </head>
-<body id="detalhes">
+<body>
+    <% if(message !== "") { %>
+        <section id="message">
+            <p><%= message %></p><span id="close">&times;</span>
+        </section>
+        <% } %>
     <header>
         <nav>
             <button class="pokedex-mode black-button"><a href="./">HOME</a></button>
@@ -29,6 +34,6 @@
        </ul>
        <% }); %>
     </main>
-<script src="../public/js/script.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>

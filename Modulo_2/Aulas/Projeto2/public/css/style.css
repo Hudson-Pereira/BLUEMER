@@ -302,8 +302,7 @@ h2{
   color: blue;
 }
 
-/* formulario */
 #message{
   display: flex;
-
+  background-color: #9fdab1;
 }

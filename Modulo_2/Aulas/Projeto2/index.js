@@ -2,7 +2,7 @@ const express = require("express");//importa modulo express
 const path = require("path"); //importando path
 
 const app = express();//instancia uma referencia do express no projeto
-const port = 3000;
+const port = process.env.PORT || 3000;// set port usando a var de ambiente ou a porta 3000.
 
 app.set("view engine", "ejs"); // set engine para trabalhar com EJS
 app.use(express.static(path.join(__dirname, "public"))); //set public como raiz
@@ -10,7 +10,7 @@ app.use(express.urlencoded());
 
 //variaveis
 let pokemons = [{img: "/img/bulba.jpg", num:"001", name: "Bulbassauro",type: "Planta",desc: "DescricaoHá uma semente de planta em suas costas desde o dia em que o Pokémon nasceu. A semente cresce lentamente.", alt: "0.7",peso: "6.9", hab:"Overgrow"},
-{img: "/img/ivi.jpg", num:"002", name: "Ivysauro",type: "Planta",desc: "Quando o bulbo em suas costas fica grande, parece perder a capacidade de ficar em pé sobre as patas traseiras.", alt: "1.0",peso: "13.0", hab:"Chamas"},
+{img: "/img/ivi.jpeg", num:"002", name: "Ivysauro",type: "Planta",desc: "Quando o bulbo em suas costas fica grande, parece perder a capacidade de ficar em pé sobre as patas traseiras.", alt: "1.0",peso: "13.0", hab:"Chamas"},
 {img: "/img/charmander.jpg", num:"001", name: "Charmander",type: "Fogo",desc: "Descricao", alt: "0.6",peso: "8.5", hab:"Chamas"}];
 
 let message = "";
@@ -44,9 +44,12 @@ app.post("/details", (req, res) => {
     const pokedados = {img: imagem, name: name, num: num, type: type, desc: desc, hab: hab, alt: alt, peso: peso};
     
     pokemons.push(pokedados);
-    
+    message = `Pokemon ${name} cadastrado com sucesso`;
+    setTimeout(() => {
+        message = "";
+    }, 2000);
     console.log(pokemons);
-    res.render("details", {pokemons: pokemons});
+    res.render("details", {pokemons: pokemons, message: message});
 });
 
 app.get("/formulario", (req, res) => {
