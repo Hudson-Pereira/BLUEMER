@@ -9,7 +9,10 @@ app.use(express.static(path.join(__dirname, "public"))); //set public como raiz
 app.use(express.urlencoded());
 
 //variaveis
-let pokemons = [{img: "/img/charmander.jpg", num:"001", name: "Charmander",type: "Fogo",desc: "Descricao", alt: "0.6",peso: "8.5", hab:"Chamas"}];
+let pokemons = [{img: "/img/bulba.jpg", num:"001", name: "Bulbassauro",type: "Planta",desc: "DescricaoHá uma semente de planta em suas costas desde o dia em que o Pokémon nasceu. A semente cresce lentamente.", alt: "0.7",peso: "6.9", hab:"Overgrow"},
+{img: "/img/ivi.jpg", num:"002", name: "Ivysauro",type: "Planta",desc: "Quando o bulbo em suas costas fica grande, parece perder a capacidade de ficar em pé sobre as patas traseiras.", alt: "1.0",peso: "13.0", hab:"Chamas"},
+{img: "/img/charmander.jpg", num:"001", name: "Charmander",type: "Fogo",desc: "Descricao", alt: "0.6",peso: "8.5", hab:"Chamas"}];
+
 let message = "";
 // app.get("/", (req, res) => {
 //     res.send("Hello world uhuuuu");
@@ -30,11 +33,8 @@ app.get("/cadastro", (req, res) => {
 });
 
 app.get("/detail", (req, res) => {
-    const conteudos = {img: "/img/charmander.jpg", num:"001", name: "Charmander",type: "Fogo",desc: "Descricao", alt: "0.6",peso: "8.5", hab:"Chamas"}
     
-    const props = Object.keys(conteudos);
-    
-    res.render("detail", { pokedados: conteudos, props: props});
+    res.render("detail", {pokemons: pokemons});
 });
 
 app.post("/details", (req, res) => {
@@ -44,8 +44,6 @@ app.post("/details", (req, res) => {
     const pokedados = {img: imagem, name: name, num: num, type: type, desc: desc, hab: hab, alt: alt, peso: peso};
     
     pokemons.push(pokedados);
-
-    const props = Object.keys(pokedados);
     
     console.log(pokemons);
     res.render("details", {pokemons: pokemons});
