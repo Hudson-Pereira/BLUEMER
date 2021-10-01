@@ -8,10 +8,16 @@
     <title>Formulário</title>
 </head>
 <body>
+    <% if(message !== "") { %>
+        <section id="message">
+            <p><%= message %></p><span id="close">&times;</span>
+        </section>
+        <% } %>
     <header>
         <h1>Formulário de teste</h1>
     </header>
     <main>
+
         <section id="form">
             <form action="/recebeform" method="POST"> <!--para onde e metodo que vai-->
                 <article>
@@ -30,5 +36,6 @@
             </form>
         </section>
     </main>
+<script src="/js/script.js"></script>
 </body>
 </html>
