@@ -21,23 +21,13 @@
     </header>
     <main>
         
-       
-    <% 
-   for(let i=0;i<=0;i++) { %>
-       <ul id="det">
-
-               <img id="tela" src="<%= pokedados[props[0]] %>"/>
-               <section id="poke"><h2>Numero: </h2><article><%= pokedados[props[1]] %></article></section>
-               <section id="poke"><h2>Nome: </h2><article><%= pokedados[props[2]] %></article></section>
-               <section id="poke"><h2>Tipo: </h2><article><%= pokedados[props[3]] %></article></section>
-               <section id="poke"><h2>Descrição: </h2><article><%= pokedados[props[4]] %></article></section>
-               <section id="poke"><h2>Altura: </h2><article><%= pokedados[props[5]] %></article></section>
-               <section id="poke"><h2>Peso: </h2><article><%= pokedados[props[6]] %></article></section>
-               <section id="poke"><h2>Habilidade: </h2><article><%= pokedados[props[7]] %></article></section>
-           
-       </ul>
-       <% } %>
-    
+       <% pokemons.forEach(item => { %>
+        <ul id="det">
+                <img id="tela" src="<%= item.img %>"/>
+                <section id="poke"><h2>Nome: </h2><article><%= item.name %></article></section>
+                <section id="poke"><h2>Tipo: </h2><article><%= item.type %></article></section>
+        </ul>
+        <% }); %>
     </main>
 <script src="../public/js/script.js"></script>
 </body>

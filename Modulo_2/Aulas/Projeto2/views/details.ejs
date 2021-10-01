@@ -24,13 +24,8 @@
    <% pokemons.forEach(item => { %>
        <ul id="det">
                <img id="tela" src="<%= item.img %>"/>
-               <section id="poke"><h2>Numero: </h2><article><%= item.num %></article></section>
                <section id="poke"><h2>Nome: </h2><article><%= item.name %></article></section>
                <section id="poke"><h2>Tipo: </h2><article><%= item.type %></article></section>
-               <section id="poke"><h2>Descrição: </h2><article><%= item.desc %></article></section>
-               <section id="poke"><h2>Altura: </h2><article><%= item.alt %></article></section>
-               <section id="poke"><h2>Peso: </h2><article><%= item.peso %></article></section>
-               <section id="poke"><h2>Habilidade: </h2><article><%= item.hab %></article></section>
        </ul>
        <% }); %>
     </main>
