@@ -63,3 +63,14 @@ p {
     justify-content: center;
     flex-direction: column;
 }
+
+#pokedex {
+    color: red;
+}
+
+#pokedex:hover {
+    border-color: white;
+    color: white;
+    background-color: red;
+}
+
