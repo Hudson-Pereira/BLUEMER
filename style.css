@@ -26,6 +26,7 @@ p {
 }
 #user {
     border: none;
+    font-size: 3rem;
 }
 
 #pH {
@@ -73,4 +74,15 @@ p {
     color: white;
     background-color: red;
 }
+
+#supertrunfo {
+    color: rgb(23, 47, 99);
+}
+
+#supertrunfo:hover {
+    border-color: white;
+    color: white;
+    background-color: rgb(23, 47, 99);
+}
+
 
